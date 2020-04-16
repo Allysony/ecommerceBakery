@@ -1,17 +1,25 @@
 import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header";
-import HomeCarousel from "./components/HomeCarousel";
-import HomeContent from "./components/HomeContent";
+
+import Home from "./components/Home";
+import Products from "./products";
+import Cart from "./components/Cart";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <HomeCarousel />
-      <HomeContent />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/products" component={Products} />
+          <Route path="/cart" component={Cart} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

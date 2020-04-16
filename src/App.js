@@ -7,7 +7,6 @@ import "./App.css";
 import Home from "./components/Home";
 import Products from "./products";
 import Cart from "./components/Cart";
-import Navigation from "./components/Navigation";
 
 function App() {
   return (

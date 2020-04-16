@@ -5,7 +5,7 @@ import thumb from "./cupcake.png";
 function ProductPreview(title, price, image) {
   return (
     <Card>
-      <Card.Img variant="top" src={image} />
+      <Card.Img variant="top" src={thumb} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{price}</Card.Text>

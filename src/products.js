@@ -1,10 +1,10 @@
 import React from "react";
+import { CardDeck } from "react-bootstrap";
+
 import Header from "./components/Header";
 import ProductPreview from "./components/ProductPreview";
-import { CardDeck } from "react-bootstrap";
-import cupcake from "./components/cupcake.png"
+import thumb from "./components/cupcake.png";
 
-const product = ProductPreview("blah", "$0.00", cupcake);
 
 function Products() {
   return (
@@ -12,9 +12,9 @@ function Products() {
       <Header />
       <p>Products!</p>
       <CardDeck>
-        {product}
-        {product}
-        {product}
+        <ProductPreview name="Red Velvet" price="$3.60" image="./cupcake.png" />
+        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
+        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
       </CardDeck>
     </div>
   );

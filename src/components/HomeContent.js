@@ -1,6 +1,5 @@
 import React from "react";
 import bakers from "./bakers.png";
-import { Container, Row, Col } from "reactstrap";
 
 function HomeContent() {
   return (

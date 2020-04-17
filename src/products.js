@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import ProductPreview from "./components/ProductPreview";
 import thumb from "./components/cupcake.png";
 
+
 function Products() {
   return (
     <div className="Products">

@@ -5,6 +5,7 @@ import { CardDeck } from "react-bootstrap";
 import cupcake from "./components/cupcake.png"
 
 const product = ProductPreview("blah", "$0.00", cupcake);
+
 function Products() {
   return (
     <div className="Products">

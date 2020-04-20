@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "pid": 101,
+      "name": "Red Velvet",
+      "imgUrl": "blah",
+      "price": "$3.50",
+      "description": "yum"
+    },
+    {
+      "pid": 102,
+      "name": "Vanilla",
+      "imgUrl": "blah",
+      "price": "$3.50",
+      "description": "yum"
+    },
+    {
+      "pid": 103,
+      "name": "Chocolate",
+      "imgUrl": "blah",
+      "price": "$3.50",
+      "description": "yum"
+    }
+  ]
+}

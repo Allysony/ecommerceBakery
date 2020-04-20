@@ -21,15 +21,15 @@ function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} href="/">
+          <Link to="/" className="nav-link">
             Home
-          </Nav.Link>
-          <Nav.Link as={Link} href="/products">
+          </Link>
+          <Link to="/products" className="nav-link">
             Products
-          </Nav.Link>
-          <Nav.Link as={Link} href="/cart">
+          </Link>
+          <Link to="/cart" className="nav-link">
             Cart
-          </Nav.Link>
+          </Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />

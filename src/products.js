@@ -8,6 +8,10 @@ import thumb from "./components/cupcake.png";
 import productdata from "./productdata.json";
 
 class Products extends Component {
+  handleUpdate(pid) {
+    console.log(pid);
+    this.props.action(pid);
+  }
   render() {
     let data = require("./productdata.json");
     console.log(this.props.state.productdata);
@@ -21,21 +25,39 @@ class Products extends Component {
             name={product.name}
             price={product.price}
             image={thumb}
-            action={this.props.action()}
+            action={pid => this.handleUpdate(pid)}
           />
         ))}
         <h1>Cookies</h1>
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
+        {this.props.state.productdata.products.map(product => (
+          <ProductPreview
+            pid={product.pid}
+            name={product.name}
+            price={product.price}
+            image={thumb}
+            action={() => this.props.action()}
+          />
+        ))}
         <h1>Cakes!</h1>
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
+        {this.props.state.productdata.products.map(product => (
+          <ProductPreview
+            pid={product.pid}
+            name={product.name}
+            price={product.price}
+            image={thumb}
+            action={() => this.props.action()}
+          />
+        ))}
         <h1>Pies</h1>
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
-        <ProductPreview name="Red Velvet" price="$3.60" image={thumb} />
+        {this.props.state.productdata.products.map(product => (
+          <ProductPreview
+            pid={product.pid}
+            name={product.name}
+            price={product.price}
+            image={thumb}
+            action={() => this.props.action()}
+          />
+        ))}
       </div>
     );
   }

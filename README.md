@@ -1,8 +1,7 @@
 # ecommerceBakery
+
 inf 124 computer app engineering
 Bakery web application
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

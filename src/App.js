@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import "./App.css";
 
 import Home from "./components/Home";
 import Products from "./products";
 import ProductPage from "./components/ProductPage";
 import Cart from "./components/Cart";
-import { Link } from "react-router-dom";
 
 import productdata from "./productdata.json";
 
@@ -15,15 +14,19 @@ class App extends Component {
     super(props);
     this.state = {
       productdata: productdata,
-      pid: 103
+      pid: 101
     };
-    this.changePID = this.changePID.bind(this);
   }
 
-  changePID(id) {
-    this.setState({
-      pid: id
-    });
+  changePID(pid) {
+    console.log(this.state.pid);
+    console.log(pid);
+    this.setState(
+      {
+        pid: pid
+      },
+      console.log(this.state.pid)
+    );
   }
 
   render() {
@@ -38,6 +41,9 @@ class App extends Component {
               <Link to="/products">products</Link>
             </li>
             <li>
+              <Link to="/productpage">productpage</Link>
+            </li>
+            <li>
               <Link to="/cart">cart</Link>
             </li>
           </ul>
@@ -50,7 +56,7 @@ class App extends Component {
                 <Products
                   {...props}
                   state={this.state}
-                  action={this.changePID()}
+                  action={pid => this.changePID(pid)}
                 />
               )}
             />

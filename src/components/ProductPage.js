@@ -4,6 +4,7 @@ import Header from "./Header";
 
 class ProductPage extends Component {
   render() {
+    console.log(this.props.state.pid);
     return (
       <div className="ProductPage">
         <Header />

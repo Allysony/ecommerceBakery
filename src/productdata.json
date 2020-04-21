@@ -3,7 +3,7 @@
     {
       "pid": 101,
       "name": "Red Velvet Cupcake",
-      "imgUrl": "s3://bakerymedia/redvelvet.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/redvelvet.jpg",
       "price": "$3.50",
       "description": "Our most popular cupcake, red velvet, was developed by Sprinkles founder Candace Nelson as an homage to her husband Charles and his deep Oklahoma roots. As a chocolate lover, Candace upped the chocolate quotient with Callebaut cocoa, mellowing the red color to a sophisticated hue. Set against the lily white of rich cream cheese frosting, the contrast is gorgeous... if only we had the self-restraint to sit and admire it!",
       "category": "Cupcake"
@@ -11,7 +11,7 @@
     {
       "pid": 102,
       "name": "Vanilla Cupcake",
-      "imgUrl": "s3://bakerymedia/vanilla.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/vanilla.jpg",
       "price": "$4.50",
       "description": "Purists will delight in our vanilla cupcake, though our vanilla cake is anything but simple. A favorite of the bakery staff, this soft, delicate cake is perfumed by the sweet flavor of pure vanilla for an effect that is simply... heaven.",
       "category": "Cupcake"
@@ -19,7 +19,7 @@
     {
       "pid": 103,
       "name": "Chocolate Cupcake",
-      "imgUrl": "s3://bakerymedia/choccupcake.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/choccupcake.jpg",
       "price": "$3.50",
       "description": "You are perpetually on the hunt for the most decadent and complex chocolate gems to dazzle your sophisticated palate. Strike it \"rich\" with Sprinkles Dark Chocolate cupcakes! Ample cocoa gives this cake its intense flavor while fragrant Madagascar Bourbon vanilla adds a rich perfume. Topped with a creamy, bittersweet frosting and real chocolate sprinkles from France, the only other thing in the world you'll want is an ice cold glass of milk!",
       "category": "Cupcake"
@@ -27,7 +27,7 @@
     {
       "pid": 104,
       "name": "Chocolate Cake",
-      "imgUrl": "s3://bakerymedia/choccake.jpeg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/choccake.jpeg",
       "price": "$30.00",
       "description": "From the beautiful and decorative exterior to the decadent and delicious inside, the Ultimate Chocolate Cake is a gourmet dessert to remember. The first layer is a rich brownie fudge cake, topped with a layer of light and fluffy New York-style cheesecake, and fudge filling in between. Top it all off with fancy fudge frosting and pecans, and you have a chocolate cake that memories are made of.",
       "category": "Cake"
@@ -35,7 +35,7 @@
     {
       "pid": 105,
       "name": "Red Velvet Cake",
-      "imgUrl": "s3://bakerymedia/redvelvetcake.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/redvelvetcake.jpg",
       "price": "$30.00",
       "description": "From the beautiful and decorative exterior to the decadent and delicious inside, the Red velvet cake is a gourmet dessert to remember.",
       "category": "Cake"
@@ -43,7 +43,7 @@
     {
       "pid": 106,
       "name": "Lemon Cake",
-      "imgUrl": "s3://bakerymedia/lemoncake.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/lemoncake.jpg",
       "price": "$35.00",
       "description": "A zingy lemon cake with mascarpone filling inside and a dreamy Swiss meringue buttercream.",
       "category": "Cake"
@@ -51,7 +51,7 @@
     {
       "pid": 107,
       "name": "Birthday Cake",
-      "imgUrl": "s3://bakerymedia/birthdaycake.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/birthdaycake.jpg",
       "price": "$50.00",
       "description": "From the beautiful and decorative exterior to the decadent and delicious inside, the Birthday Cake is a gourmet dessert to remember.",
       "category": "Cake"
@@ -59,7 +59,7 @@
     {
       "pid": 108,
       "name": "Chocolate Chip Cookie",
-      "imgUrl": "s3://bakerymedia/chocchipcookie.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/chocchipcookie.jpg",
       "price": "$4.00",
       "description": "Our Chocolate Cookies will brighten your snacktime with uncompromising taste and texture.",
       "category": "Cookie"
@@ -67,7 +67,7 @@
     {
       "pid": 109,
       "name": "Peanut Butter Cookie",
-      "imgUrl": "s3://bakerymedia/peanutbuttercookies.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/peanutbuttercookies.jpg",
       "price": "$5.00",
       "description": "Our Peanut Butter Cookies will brighten your snacktime with uncompromising taste and texture.",
       "category": "Cookie"
@@ -75,7 +75,7 @@
     {
       "pid": 110,
       "name": "Snickerdoodle Cookie",
-      "imgUrl": "s3://bakerymedia/snickerdoodlecookie.jpg",
+      "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/snickerdoodlecookie.jpg",
       "price": "$5.00",
       "description": "Our SnickerDoodle Cookies will brighten your snacktime with uncompromising taste and texture.",
       "category": "Cookie"

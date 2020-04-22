@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Media } from "react-bootstrap";
 
-import thumb from "./cupcake.png";
-
 class ProductPage extends Component {
   render() {
     console.log(this.props.state.pid);
@@ -17,7 +15,12 @@ class ProductPage extends Component {
     return (
       <div className="ProductPage">
         <Media style={styles.listing}>
-          <img width="40%" className="mr-3" src={thumb} alt={product.name} />
+          <img
+            width="40%"
+            className="mr-3"
+            src={product.imgUrl}
+            alt={product.name}
+          />
           <Media.Body>
             <Link to="./products">{"<"} Products</Link>
             <p></p>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import ProductPreview from "./components/ProductPreview";
 import thumb from "./components/cupcake.png";
 
@@ -10,7 +9,11 @@ class Products extends Component {
   }
   render() {
     let products = this.props.state.productdata.products;
-    let cupcakes = products.filter(p => p.category === "Cupcakes");
+    let cupcakes = products.filter(p => p.category === "Cupcake");
+
+    let cookies = products.filter(p => p.category === "Cookie");
+    let cakes = products.filter(p => p.category === "Cake");
+
     console.log(this.props.state.productdata);
     return (
       <div className="Products">
@@ -20,37 +23,27 @@ class Products extends Component {
             pid={product.pid}
             name={product.name}
             price={product.price}
-            image={thumb}
+            image={product.imgUrl}
             action={pid => this.handleUpdate(pid)}
           />
         ))}
         <h1>Cookies</h1>
-        {products.map(product => (
+        {cookies.map(product => (
           <ProductPreview
             pid={product.pid}
             name={product.name}
             price={product.price}
-            image={thumb}
+            image={product.imgUrl}
             action={pid => this.handleUpdate(pid)}
           />
         ))}
         <h1>Cakes!</h1>
-        {products.map(product => (
+        {cakes.map(product => (
           <ProductPreview
             pid={product.pid}
             name={product.name}
             price={product.price}
-            image={thumb}
-            action={pid => this.handleUpdate(pid)}
-          />
-        ))}
-        <h1>Pies</h1>
-        {products.map(product => (
-          <ProductPreview
-            pid={product.pid}
-            name={product.name}
-            price={product.price}
-            image={thumb}
+            image={product.imgUrl}
             action={pid => this.handleUpdate(pid)}
           />
         ))}

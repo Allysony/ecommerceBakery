@@ -10,7 +10,8 @@ class Cart extends Component {
       ccNum: "",
       address: "",
       zip: "",
-      shipMethod: "ground"
+      shipMethod: "ground",
+      order: ""
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -47,7 +48,8 @@ class Cart extends Component {
         `Phone: ${this.state.telephone}%0D%0A` +
         `Address: ${this.state.address}, ${this.state.zip}%0D%0A` +
         `Credit Card: ${this.state.ccNum}%0D%0A` +
-        `Shipping Method: ${this.state.shipMethod}`;
+        `Shipping Method: ${this.state.shipMethod}%0D%0A` +
+        `Order: ${this.state.order}`;
       window.location = `mailto:orders@vanillajsbakery.com?subject=${subject}&body=${body}`;
     } else {
       alert("Please enter a valid credit card number.");
@@ -127,9 +129,10 @@ class Cart extends Component {
             <option value="two-day">2-Day Delivery - $35.00</option>
             <option value="one-day">Overnight Delivery - $55.00</option>
           </select>
-          <input type="submit" value="Submit order" />
         </form>
         <h5>Order details</h5>
+        <p>Format: "item1_pid, quantity; item2_pid, quantity; etc..."</p>
+        <p>Example order: "102, 4; 201, 1; 303, 2;"</p>
         <form onSubmit={this.handleSubmit}>
           <textarea
             name="order"
@@ -137,6 +140,7 @@ class Cart extends Component {
             onChange={this.handleInputChange}
             placeholder="Enter order"
           />
+          <input type="submit" value="Submit order" />
         </form>
       </div>
     );

@@ -8,37 +8,16 @@ function HomeCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={pic1}
-          alt="delivery"
-          style={styles.carousel}
-        />
+        <img className="d-block w-100" src={pic1} alt="delivery" />
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={pic2}
-          alt="update"
-          style={styles.carousel}
-        />
+        <img className="d-block w-100" src={pic2} alt="update" />
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={pic3}
-          alt="cookies"
-          style={styles.carousel}
-        />
+        <img className="d-block w-100" src={pic3} alt="cookies" />
       </Carousel.Item>
     </Carousel>
   );
 }
 
 export default HomeCarousel;
-
-let styles = {
-  carousel: {
-    height: 400
-  }
-};

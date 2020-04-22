@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
+import Header from "./components/Header";
 import Home from "./components/Home";
 import Products from "./products";
 import ProductPage from "./components/ProductPage";
@@ -33,21 +34,7 @@ class App extends Component {
     return (
       <BrowserRouter basename={"/bakeryBuild"}>
         <div>
-          <ul className="nav">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/products">products</Link>
-            </li>
-            <li>
-              <Link to="/productpage">productpage</Link>
-            </li>
-            <li>
-              <Link to="/cart">cart</Link>
-            </li>
-          </ul>
-
+          <Header />
           <Switch>
             <Route path="/" component={Home} exact />
             <Route

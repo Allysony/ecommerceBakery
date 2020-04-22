@@ -1,11 +1,7 @@
 import React, { Component } from "react";
-import { CardDeck } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import Header from "./components/Header";
+
 import ProductPreview from "./components/ProductPreview";
-import ProductPage from "./components/ProductPage";
 import thumb from "./components/cupcake.png";
-import productdata from "./productdata.json";
 
 class Products extends Component {
   handleUpdate(pid) {
@@ -13,13 +9,13 @@ class Products extends Component {
     this.props.action(pid);
   }
   render() {
-    let data = require("./productdata.json");
+    let products = this.props.state.productdata.products;
+    let cupcakes = products.filter(p => p.category === "Cupcakes");
     console.log(this.props.state.productdata);
     return (
       <div className="Products">
-        <Header />
         <h1>Cupcakes</h1>
-        {this.props.state.productdata.products.map(product => (
+        {cupcakes.map(product => (
           <ProductPreview
             pid={product.pid}
             name={product.name}
@@ -29,44 +25,38 @@ class Products extends Component {
           />
         ))}
         <h1>Cookies</h1>
-        {this.props.state.productdata.products.map(product => (
+        {products.map(product => (
           <ProductPreview
             pid={product.pid}
             name={product.name}
             price={product.price}
             image={thumb}
-            action={() => this.props.action()}
+            action={pid => this.handleUpdate(pid)}
           />
         ))}
         <h1>Cakes!</h1>
-        {this.props.state.productdata.products.map(product => (
+        {products.map(product => (
           <ProductPreview
             pid={product.pid}
             name={product.name}
             price={product.price}
             image={thumb}
-            action={() => this.props.action()}
+            action={pid => this.handleUpdate(pid)}
           />
         ))}
         <h1>Pies</h1>
-        {this.props.state.productdata.products.map(product => (
+        {products.map(product => (
           <ProductPreview
             pid={product.pid}
             name={product.name}
             price={product.price}
             image={thumb}
-            action={() => this.props.action()}
+            action={pid => this.handleUpdate(pid)}
           />
         ))}
       </div>
     );
   }
-}
-
-{
-  /*Products.propTypes = {
-  productdata: React.PropTypes.arrayOf(React.PropTypes.object).isRequired
-};*/
 }
 
 Products.defaultProps = {

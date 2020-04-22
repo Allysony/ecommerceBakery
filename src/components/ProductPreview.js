@@ -18,30 +18,32 @@ class ProductPreview extends Component {
     let linkStyle;
     if (this.state.hovered) {
       console.log("TRANSFORM!");
-      linkStyle = { transform: "scale(1.5,1.5)" };
+      linkStyle = {
+        "-webkit-animation": "App-logo-spin 4s linear infinite",
+        "-moz-animation": "App-logo-spin 4s linear infinite",
+        animation: "App-logo-spin 4s linear infinite"
+      };
     } else {
       linkStyle = {};
       console.log("BYE!");
     }
     return (
-      <div>
-        <Card style={{ width: "30%", display: "inline-block", margin: "1.5%" }}>
-          <Link to="./productpage">
-            <Card.Img
-              variant="top"
-              src={this.props.image}
-              style={linkStyle}
-              onMouseEnter={() => this.setState({ hovered: true })}
-              onMouseLeave={() => this.setState({ hovered: false })}
-              onClick={() => this.handleClick()}
-            />
-          </Link>
-          <Card.Body>
-            <Card.Title>{this.props.name}</Card.Title>
-            <Card.Text>{this.props.price}</Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
+      <Card style={{ width: "30%", display: "inline-block", margin: "1.5%" }}>
+        <Link to="./productpage">
+          <Card.Img
+            variant="top"
+            src={this.props.image}
+            style={linkStyle}
+            onMouseEnter={() => this.setState({ hovered: true })}
+            onMouseLeave={() => this.setState({ hovered: false })}
+            onClick={() => this.handleClick()}
+          />
+        </Link>
+        <Card.Body>
+          <Card.Title>{this.props.name}</Card.Title>
+          <Card.Text>{this.props.price}</Card.Text>
+        </Card.Body>
+      </Card>
     );
   }
 }

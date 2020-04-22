@@ -9,7 +9,6 @@ import ProductPage from "./components/ProductPage";
 import Cart from "./components/Cart";
 
 import productdata from "./productdata.json";
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -60,3 +59,4 @@ class App extends Component {
 }
 
 export default App;
+

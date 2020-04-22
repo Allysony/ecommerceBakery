@@ -1,15 +1,15 @@
 import React from "react";
 import bakers from "./bakers.png";
-
+import textstyles from './styles.css'
 function HomeContent() {
   return (
     <div>
       <div style={styles.bakers}>
         <div style={styles.bakerstext}>
           <h3>Meet the Bakers</h3>
-          <p>
-            Gwendolyn Rogers has had a passion for baking and cooking her entire
-            life. Born in New Orleans, Louisiana in 1965 she had a tough
+          <p style = {textstyles.p}>
+            Allyson and Richard have had a passion for baking and cooking their entire
+            life. Born in New Orleans, Louisiana in 1965 they had a tough
             childhood. Coming from a torn family, loss of her brother and a
             dysfunctional family, she was forced to raise herself. She put
             herself though school waiting tables and having multiple restaurant
@@ -39,7 +39,7 @@ function HomeContent() {
             Gwendolyn spent two years designing the second location which now
             seats over 150, has a 2,000 square foot production kitchen and a
             full service restaurant with bar. It is located in Carmel, Indiana.
-          </p>
+        </p>
         </div>
         <img
           src={bakers}

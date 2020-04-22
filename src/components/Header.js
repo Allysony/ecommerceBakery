@@ -1,13 +1,15 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import textstyles from './styles.css'
 import cupcake from "./cupcake.png";
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="light" >
+      <p style = {textstyles.p}>
       <Navbar.Brand href="#home">
+
         <img
           alt=""
           src={cupcake}
@@ -15,7 +17,9 @@ function Header() {
           height="30"
           className="d-inline-block align-top"
         />{" "}
-        Vanilla J's
+          Vanilla J's
+
+
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,6 +36,7 @@ function Header() {
           </Link>
         </Nav>
       </Navbar.Collapse>
+    </p>
     </Navbar>
   );
 }

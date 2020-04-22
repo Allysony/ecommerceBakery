@@ -1,71 +1,37 @@
 # ecommerceBakery
 
-inf 124 computer app engineering
-Bakery web application
+Informatics 124 computer app engineering<br />
+Bakery web application<br />
+PA 1: Building a dynamic website using HTML, JavaScript, and CSS<br />
 
-## Available Scripts
+# Site by Allyson Y (ID: 95004654) and Richard L (ID: 50546274)
 
-In the project directory, you can run:
+#  URL ADDRESS OF WEBSITE:
+### `http://circinus-1.ics.uci.edu:8080/bakeryBuild`
+
+## Available Scripts For Local Deployment
+
+In the project directory, run:
 
 ### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+#REQUIREMENTS SATISFIED:
 
-### `npm test`
+The **home page** specifies an overview of your business, the products you sell, the management team, and any other information that you think makes sense for the customers to know about your company.  <br />
+The **product page**, which can be navigated to from the navigation bar at the top of the page, lists of products (at least 10) available for sale in a table with multiple rows and column, where each product is shown within a separate cell.  <br />
+The **product page** displays an image for each product available for sale in each cell.  <br />
+The **product page** displays the price and other key information (e.g., color, material, etc.) associated with each product in the corresponding table cell.  <br />
+The user is be able to choose a product by clicking on the corresponding image, which leads to a new page that provides additional details about the product  <br />
+The **product page** provides the ability to track the mouse movement, such that when the mouse moves over a product image, the size of the image is increased and rotates, and when the mouse moves out, the size of the image is returned back to normal. <br />
+On the the **cart page**, which can be navigated to from the navigation bar at the top of the page, the user is able to order a product by filling a form. The form should allow the user to enter the product identifier, quantity, first name, last name, phone number, shipping address, shipping method (e.g., overnight, 2-days expedited, 6-days ground), and credit card information.  <br />
+Upon submitting the form, the website sends an email with the purchase order information included in the body of the email.  <br /> 
+Before submitting the form, it checks for proper formatting, including whether all fields are filled properly, whether the phone number, address, and credit card are properly formatted. An alarm is raised if a field is empty or not properly formatted to prevent submission of bad data.  <br />
+Our website uses CSS to specify at least 10 stylistic properties for our website <br />
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+And of course our names located on the **home page**
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Have a good day, grader. We love you! Stay safe out there!!!!

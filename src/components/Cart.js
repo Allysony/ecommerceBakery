@@ -105,7 +105,6 @@ class Cart extends Component {
             type="text"
             name="address"
             value={this.state.address}
-            id="address"
             onChange={this.handleInputChange}
             placeholder=" Address"
             required
@@ -114,7 +113,6 @@ class Cart extends Component {
             type="text"
             name="zip"
             value={this.state.zip}
-            id="zip"
             onChange={this.handleInputChange}
             pattern="[0-9]{5}"
             placeholder="ZIP code"
@@ -130,6 +128,15 @@ class Cart extends Component {
             <option value="one-day">Overnight Delivery - $55.00</option>
           </select>
           <input type="submit" value="Submit order" />
+        </form>
+        <h5>Order details</h5>
+        <form onSubmit={this.handleSubmit}>
+          <textarea
+            name="order"
+            value={this.state.order}
+            onChange={this.handleInputChange}
+            placeholder="Enter order"
+          />
         </form>
       </div>
     );

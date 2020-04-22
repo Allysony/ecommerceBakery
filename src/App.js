@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Products from "./products";
 import ProductPage from "./components/ProductPage";
@@ -52,6 +53,7 @@ class App extends Component {
             />
             <Route path="/cart" component={Cart} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );
@@ -59,4 +61,3 @@ class App extends Component {
 }
 
 export default App;
-

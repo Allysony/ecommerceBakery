@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Card } from "react-bootstrap";
+import React, {Component} from "react";
+import {Link} from "react-router-dom";
+import {Card} from "react-bootstrap";
 
 class ProductPreview extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { hovered: false };
-  }
+    constructor(props) {
+        super(props);
+        this.state = {hovered: false};
+    }
 
-  handleClick() {
-    console.log(this.props.pid);
-    this.props.action(this.props.pid);
-  }
+    handleClick() {
+        console.log(this.props.pid);
+        this.props.action(this.props.pid);
+    }
 
   render() {
     console.log(this.props.pid);

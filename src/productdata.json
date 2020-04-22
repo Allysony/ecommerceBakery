@@ -25,7 +25,7 @@
       "category": "Cupcake"
     },
     {
-      "pid": 104,
+      "pid": 301,
       "name": "Chocolate Cake",
       "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/choccake.jpeg",
       "price": "$30.00",
@@ -33,7 +33,7 @@
       "category": "Cake"
     },
     {
-      "pid": 105,
+      "pid": 302,
       "name": "Red Velvet Cake",
       "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/redvelvetcake.jpg",
       "price": "$30.00",
@@ -41,7 +41,7 @@
       "category": "Cake"
     },
     {
-      "pid": 106,
+      "pid": 303,
       "name": "Lemon Cake",
       "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/lemoncake.jpg",
       "price": "$35.00",
@@ -49,7 +49,7 @@
       "category": "Cake"
     },
     {
-      "pid": 107,
+      "pid": 304,
       "name": "Birthday Cake",
       "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/birthdaycake.jpg",
       "price": "$50.00",
@@ -57,7 +57,7 @@
       "category": "Cake"
     },
     {
-      "pid": 108,
+      "pid": 201,
       "name": "Chocolate Chip Cookie",
       "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/chocchipcookie.jpg",
       "price": "$4.00",
@@ -65,7 +65,7 @@
       "category": "Cookie"
     },
     {
-      "pid": 109,
+      "pid": 202,
       "name": "Peanut Butter Cookie",
       "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/peanutbuttercookies.jpg",
       "price": "$5.00",
@@ -73,7 +73,7 @@
       "category": "Cookie"
     },
     {
-      "pid": 110,
+      "pid": 203,
       "name": "Snickerdoodle Cookie",
       "imgUrl": "https://bakerymedia.s3-us-west-1.amazonaws.com/snickerdoodlecookie.jpg",
       "price": "$5.00",

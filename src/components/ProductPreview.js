@@ -1,17 +1,17 @@
-import React, {Component} from "react";
-import {Link} from "react-router-dom";
-import {Card} from "react-bootstrap";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Card } from "react-bootstrap";
 
 class ProductPreview extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {hovered: false};
-    }
+  constructor(props) {
+    super(props);
+    this.state = { hovered: false };
+  }
 
-    handleClick() {
-        console.log(this.props.pid);
-        this.props.action(this.props.pid);
-    }
+  handleClick() {
+    console.log(this.props.pid);
+    this.props.action(this.props.pid);
+  }
 
   render() {
     console.log(this.props.pid);
@@ -19,8 +19,8 @@ class ProductPreview extends Component {
     if (this.state.hovered) {
       console.log("TRANSFORM!");
       linkStyle = {
-        "-webkit-animation": "App-logo-spin 4s linear infinite",
-        "-moz-animation": "App-logo-spin 4s linear infinite",
+        WebkitAnimation: "App-logo-spin 4s linear infinite",
+        MozAnimation: "App-logo-spin 4s linear infinite",
         animation: "App-logo-spin 4s linear infinite"
       };
     } else {

@@ -18,7 +18,7 @@ In the project directory, run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-#REQUIREMENTS SATISFIED:
+# REQUIREMENTS SATISFIED:
 
 The **home page** specifies an overview of your business, the products you sell, the management team, and any other information that you think makes sense for the customers to know about your company.  <br />
 The **product page**, which can be navigated to from the navigation bar at the top of the page, lists of products (at least 10) available for sale in a table with multiple rows and column, where each product is shown within a separate cell.  <br />

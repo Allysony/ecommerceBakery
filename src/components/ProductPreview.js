@@ -41,7 +41,7 @@ class ProductPreview extends Component {
         </Link>
         <Card.Body>
           <Card.Title>{this.props.name}</Card.Title>
-          <Card.Text>{this.props.price}</Card.Text>
+          <Card.Text>${(this.props.price / 100.0).toFixed(2)}</Card.Text>
         </Card.Body>
       </Card>
     );

@@ -8,7 +8,7 @@ class Products extends Component {
     this.props.action(pid);
   }
   render() {
-    let products = this.props.state.productdata.products;
+    let products = this.props.state.productdata;
     let cupcakes = products.filter(p => p.category === "Cupcake");
 
     let cookies = products.filter(p => p.category === "Cookie");
@@ -23,7 +23,7 @@ class Products extends Component {
             pid={product.pid}
             name={product.name}
             price={product.price}
-            image={product.imgUrl}
+            image={product.imgurl}
             action={pid => this.handleUpdate(pid)}
           />
         ))}
@@ -33,7 +33,7 @@ class Products extends Component {
             pid={product.pid}
             name={product.name}
             price={product.price}
-            image={product.imgUrl}
+            image={product.imgurl}
             action={pid => this.handleUpdate(pid)}
           />
         ))}
@@ -43,7 +43,7 @@ class Products extends Component {
             pid={product.pid}
             name={product.name}
             price={product.price}
-            image={product.imgUrl}
+            image={product.imgurl}
             action={pid => this.handleUpdate(pid)}
           />
         ))}
